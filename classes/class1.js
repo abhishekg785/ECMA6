@@ -6,9 +6,16 @@ class Rectangle {
 		this.height = height;
 		this.width = width;
 	}
+	
+	get area() {
+		return this.calcArea();
+	}
+
+	calcArea() {
+		return this.height * this.width;
+	}
 
 }
 
-var p = new Rectangle(10, 10);
-console.log(p.height);
-console.log(p.width);
+const square = new Rectangle(10, 10);
+console.log(square.area);
