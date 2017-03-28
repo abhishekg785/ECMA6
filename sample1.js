@@ -3,3 +3,8 @@ display = () => {
 }
 
 display()
+
+
+var fun = (a) => a*a; 
+
+console.log(fun(4));
